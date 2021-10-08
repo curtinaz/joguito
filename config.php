@@ -5,6 +5,6 @@ $db = 'joguito';
 $username = 'root';
 $password = '';
 
-$conexao = mysqli($host, $db, $username, $password);
+$conn = new PDO('mysql:host=localhost;dbname=meuBancoDeDados', $username, $password);
 
 ?>
