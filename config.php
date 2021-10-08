@@ -2,6 +2,7 @@
 
 $host = 'localhost';
 $db = 'joguito';
+$password = '';
 
 
 
