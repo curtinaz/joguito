@@ -12,6 +12,9 @@ try{
     echo 'ERROR: ' . $e->getMessage();
 }
 
+$stmt = $conexao->prepare('SELECT * FROM minhaTabela WHERE id = :id');
+$stmt->execute(array('id' => $id));
+
 //primeira vez que eu conecto com PDO.
 
 ?>
