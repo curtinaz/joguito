@@ -12,8 +12,10 @@ try{
     echo 'ERROR: ' . $e->getMessage();
 }
 
-$stmt = $conexao->prepare('SELECT * FROM minhaTabela WHERE id = :id');
-$stmt->execute(array('id' => $id));
+$username = 'laura';
+
+$stmt = $conexao->prepare("INSERT INTO `tb_user` (`user_id`, `user_name`) VALUES (NULL, ':username')");
+$stmt->execute(array('username' => $username));
 
 //primeira vez que eu conecto com PDO.
 
