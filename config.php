@@ -8,7 +8,7 @@ $password = '';
 try{
     $conexao = new PDO('mysql:host=' . $host . ';dbname=' . $db, $username, $password);
 } catch(PDOException $e) {
-    echo 'ops';
+    echo 'ERROR: ' . $e->getMessage();
 }
 
 //primeira vez que eu conecto com PDO.
