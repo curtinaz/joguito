@@ -3,7 +3,9 @@
 require_once('./config.php');
 
 if(isset($_COOKIE['loginstate'])) {
-    echo 'logado';
+    echo 'logado' . '<br>';
+    echo '<a href="./controllers/logout">fazer logout</a>';
 } else {
-    echo '<a href="./controllers/login.php">fazer login</a>';
+    echo 'deslogado' . '<br>';
+    echo '<a href="./controllers/login">fazer login</a>';
 }
