@@ -5,7 +5,7 @@ $username = 'root';
 $password = '';
 $db = 'joguito';
 
-$conexao = new mysqli($host, $username, $password, $db);
+$con = new mysqli($host, $username, $password, $db);
 
 // try{
 //     $conexao = new PDO('mysql:host=' . $host . ';dbname=' . $db, $username, $password);
