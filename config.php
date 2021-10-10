@@ -7,6 +7,6 @@ $db = 'joguito';
 
 $con = new mysqli($host, $username, $password, $db);
 
-require_once('./utils/cookies.php');
+// require_once('./utils/cookies.php');
 
 ?>
